@@ -18,7 +18,6 @@ override public void OnStateEnter (Animator animator, AnimatorStateInfo stateInf
 //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 override public void OnStateUpdate (Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 {
-    Vector2 newPos = new Vector2(target.position.x, animator.transform.position.y);
     float distance = Vector2.Distance(target.position, animator.transform.position);
     if (distance < 5) {
         animator.setBool("isChasing, true");
