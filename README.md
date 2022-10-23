@@ -5,6 +5,10 @@ This is a 2D  game project built for a school assignement. The game follows a yo
 * C#
 * Unity Game Engine 
 
+![6y0j7o](https://user-images.githubusercontent.com/54378636/197422434-16819b74-8941-4c47-bc27-51a0f9415465.gif)
+
+
+
 <a href="https://ibb.co/c34RKzd"><img src="https://i.ibb.co/9gQBmRj/Screenshot.png" alt="Screenshot" border="0"></a>
 
 # Motivation 
