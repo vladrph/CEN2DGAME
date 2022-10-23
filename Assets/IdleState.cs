@@ -9,15 +9,22 @@ public class IdleState: StateMachineBehavior
 
 Transform target;
 public float speed = 2;
+Transform borderCheck;
+
 //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 override public void OnStateEnter (Animator animator, AnimatorStateInfo stateInfo, int layerIndex) 
 {
     target = GameObject.findGameObjectWithTag("Player").transform;
+    borderCheck = animator.getComponent<Zombie>().borderCheck;
 }
 
 //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 override public void OnStateUpdate (Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 {
+    if(Physics2D.Raycast(borderCheck.position, Vector2.down, 2) == false) {
+            return;
+    }
+    
     float distance = Vector2.Distance(target.position, animator.transform.position);
     if (distance < 5) {
         animator.setBool("isChasing, true");
