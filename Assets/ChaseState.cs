@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Zombie : MonoBehavior
+public class ChaseState : StateMachineBehavior
 {
     Transform target;
     Transform borderCheck;
