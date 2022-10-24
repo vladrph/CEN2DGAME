@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Zombie : MonoBehavior
+public class RigidBody : StateMachineBehavior
 {
     Transform target;
     public Transform borderCheck;
