@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 
-public class SoundManager : MonoBehavior 
+public class SoundManager : MonoBehaviour 
 {
     public AudioSource EffectsSource;
     public AudioSource MusicSource;

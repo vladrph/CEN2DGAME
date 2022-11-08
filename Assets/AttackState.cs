@@ -1,3 +1,4 @@
+/*
 //Specific Purpose: Defines the AttackState for the Zombie 2D asset and its states: OnStateEnter, OnStateUpdate, and OnStateExit
 
 using Systems.Collections.Generic;
@@ -29,3 +30,4 @@ override public void OnStateExit (Animator animator, AnimatorStateInfo stateInfo
 
 // Note: AttackState and ChaseState are directly related behaviors (AttackState -> ChaseState, ChaseState -> AttackState)
 }
+*/

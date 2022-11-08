@@ -1,3 +1,4 @@
+/*
 //This is code based on the video 2D Zombie AI in Unity - State Machine Behaviors
 //Specific Purpose: Used to control Zombie's chasing movement based on three states: OnStateEnter, OnStateUpdate, and OnStateExit.
 
@@ -5,7 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChaseState : StateMachineBehavior
+public class Zombie : MonoBehavior
 {
     Transform target;
     Transform borderCheck;
@@ -36,3 +37,4 @@ override public void OnStateExit (Animator animator, AnimatorStateInfo stateInfo
     
   //ChaseState and AttackState are connected (ChaseState -> AttackState, AttackState -> ChaseState)
 }
+*/

@@ -5,25 +5,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RigidBody : StateMachineBehavior
+public class Zombie : MonoBehaviour
 {
     Transform target;
     public Transform borderCheck;
 
-void Start()
-{
-    target = GameObject.FindGameObjectWithTag("Player").transform;
-}
-
-void Update ()
-{
-    if (target.position.x > transform.position.x) 
+    void Start()
     {
-        transform.localScale = new Vector2(0.45f, 0.45f);
+        target = GameObject.FindGameObjectWithTag("Player").transform;
     }
-    else 
+
+    void Update()
     {
-        transform.localScale = new Vector2(-0.45, -0.45f);
+        if (target.position.x > transform.position.x)
+        {
+            transform.localScale = new Vector2(0.45f, 0.45f);
+        }
+        else
+        {
+          //  transform.localScale = new Vector2(-0.45, -0.45f);
+        }
     }
 }
 
