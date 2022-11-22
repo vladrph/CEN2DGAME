@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2245940218579232887}
   - component: {fileID: 2245940218579232884}
   - component: {fileID: 2245940218579232883}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zombie 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ Animator:
   m_GameObject: {fileID: 2245940218579232885}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 37aeb18270c71954b8b9f81bc261f76f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5d49391265e6e154fb9cd117f5acbc59, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
