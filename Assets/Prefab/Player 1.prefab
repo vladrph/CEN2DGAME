@@ -252,6 +252,7 @@ MonoBehaviour:
   runSpeed: 5
   moveForce: 10
   jumpForce: 21
+  jumpPower: 0
   mybody: {fileID: 0}
 --- !u!114 &4012381962116390970
 MonoBehaviour:

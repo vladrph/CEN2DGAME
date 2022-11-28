@@ -1535,12 +1535,12 @@ PrefabInstance:
     - target: {fileID: 9142125725767502032, guid: 14f61e5087b6b2b449cfe7278cf6366f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -203.7
+      value: -191.2
       objectReference: {fileID: 0}
     - target: {fileID: 9142125725767502032, guid: 14f61e5087b6b2b449cfe7278cf6366f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.41
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 9142125725767502032, guid: 14f61e5087b6b2b449cfe7278cf6366f,
         type: 3}
@@ -7282,6 +7282,14 @@ PrefabInstance:
     - target: {fileID: 1000010208881502, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
       propertyPath: m_Name
       value: Rogue_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010208881502, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010208881502, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4000010141028922, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
       propertyPath: m_RootOrder

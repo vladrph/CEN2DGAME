@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
 
         PlayerMoveKeyboard();
         //AnimatePlayer();
-        PlayerJump();
+       // PlayerJump();
     }
 
     void PlayerMoveKeyboard()
@@ -125,7 +125,9 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetButtonUp("Jump"))
         {
-            mybody.velocity = new Vector2(mybody.velocity.y, jumpForce);
+           // mybody.velocity = new Vector2(mybody.velocity.y, jumpForce);
+           
+           mybody.AddForce (new Vector2(0f, jumpForce), ForceMode2D.Impulse);
 
             anim.SetBool(JUMP_ANIMATION, true);
         }
