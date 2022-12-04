@@ -38,7 +38,6 @@ public class Movement : MonoBehaviour
 
     private void Awake()
     {
-        //mybody.AddForce(new Vector2(2,2));
         mybody = GetComponent<Rigidbody2D>(); // attaching the object to the attributes 
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
@@ -56,7 +55,6 @@ public class Movement : MonoBehaviour
         Vector2 pos = transform.position;
         pos.x += horizontalMove * runSpeed * Time.deltaTime;
         pos.y += verticalMove * runSpeed * Time.deltaTime; // time between every frame 
-
         transform.position = pos;
 
 
@@ -125,9 +123,7 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetButtonUp("Jump"))
         {
-           // mybody.velocity = new Vector2(mybody.velocity.y, jumpForce);
-           
-           mybody.AddForce (new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            mybody.AddForce (new Vector2(0f, jumpForce), ForceMode2D.Impulse);
 
             anim.SetBool(JUMP_ANIMATION, true);
         }
@@ -142,7 +138,6 @@ public class Movement : MonoBehaviour
         AnimatePlayer();
         PlayerJump();
 
-        //controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
-        //jump = false;
+        
     }
 }
