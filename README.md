@@ -38,10 +38,15 @@ The motivation of this game is to build working software while utilizing SDLC/Ag
 *  Open your Unity Editor. If you do not have Unity you can download it here : https://unity.com/download
 *  Using your IDE such as Rider or Visusal Stuido import the code base. URL:  https://github.com/vladrph/CEN2DGAME.git
 *  In the unity Editor press the play buttun to begin the game
+
+
 ![unity play button](https://user-images.githubusercontent.com/54378636/206668815-96891145-bda3-42b6-b88e-b7f452aa1ad4.jpg)
 
-*  
+*   In the main menu click on player one to begin playing the game. 
 
+![Player 1](https://user-images.githubusercontent.com/54378636/206670141-b73c772e-91c0-45d1-8f03-c56469cea927.jpg)
+
+*   Navigate through all the levels by avoiding the Zombies to win. 
 
 # Retrospective 
 
