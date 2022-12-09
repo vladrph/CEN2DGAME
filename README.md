@@ -23,7 +23,9 @@ https://user-images.githubusercontent.com/54378636/206656805-85be4f85-e1a0-467e-
 
 # Motivation 
 
-The motivation of this game is to build working software while utilizing SDLC/Agile methodologies. The Overall objective of this game is to build a 2D user directed game. 
+The motivation of this game is to build working software while utilizing SDLC/Agile methodologies. The Overall objective of this game is to build a 2D user directed game. Original Idea was to create a 2D Mario style game that was fun and interactive for the younger generation specifically adolescents and teenagers. We wanted to create a game that also incorporated Zombies and a Halloween style. 
+
+
 
 # Getting Started 
 
