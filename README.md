@@ -7,9 +7,10 @@ This is a 2D  game project built for a school assignment. The game follows a you
 * C#
 * Unity Game Engine 
 
+
 ![Zombie run](https://user-images.githubusercontent.com/54378636/206655546-12636966-b131-4ff7-a469-d4f527601d4e.jpg)
 
-
+# GAME INTRODUCTION
 
 https://user-images.githubusercontent.com/54378636/206656805-85be4f85-e1a0-467e-be29-afff5cae4375.mp4
 
@@ -18,7 +19,7 @@ https://user-images.githubusercontent.com/54378636/206656805-85be4f85-e1a0-467e-
 
 ![6y0j7o](https://user-images.githubusercontent.com/54378636/197422434-16819b74-8941-4c47-bc27-51a0f9415465.gif)
 
-
+# DEMO
 
 
 https://user-images.githubusercontent.com/54378636/206656126-971731aa-1e53-4b3e-8688-deafe67f8633.mp4
@@ -31,6 +32,16 @@ https://user-images.githubusercontent.com/54378636/206656126-971731aa-1e53-4b3e-
 # Motivation 
 
 The motivation of this game is to build working software while utilizing SDLC/Agile methodologies. The Overall objective of this game is to build a 2D user directed game. 
+
+# Getting Started 
+
+*  Open your Unity Editor. If you do not have Unity you can download it here : https://unity.com/download
+*  Using your IDE such as Rider or Visusal Stuido import the code base. URL:  https://github.com/vladrph/CEN2DGAME.git
+*  In the unity Editor press the play buttun to begin the game
+![unity play button](https://user-images.githubusercontent.com/54378636/206668815-96891145-bda3-42b6-b88e-b7f452aa1ad4.jpg)
+
+*  
+
 
 # Retrospective 
 
