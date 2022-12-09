@@ -52,12 +52,20 @@ Alpha Version 1.0
 *  Created level 1
 *  Rendered sprites with for first player and different Zombies
 *  Created background for level one
+
+
 Alpha Version 1.1
+
+
 * Created level 2
 * Created a Main Menu
 * Added Parallax Background 
 * Added floating ground effects
+
+
 Beta Version 1.0
+
+
 * Allow friends and family to test for feedback
 * Making imporvements based on feedback from friends and fmaily
 
