@@ -1,14 +1,21 @@
+- - -
+
+
 # ZOMBIE RUN
 
+
+- - -
+
+
+
+
+![Zombie run](https://user-images.githubusercontent.com/54378636/206655546-12636966-b131-4ff7-a469-d4f527601d4e.jpg)
 
 This is a 2D  game project built for a school assignment. The game follows a young boy who tries to run a away and fight different Zombies through a forest. This program is being developed with the following frameworks/technologies:
 
 
 * C#
 * Unity Game Engine 
-
-
-![Zombie run](https://user-images.githubusercontent.com/54378636/206655546-12636966-b131-4ff7-a469-d4f527601d4e.jpg)
 
 # GAME INTRODUCTION
 
@@ -75,6 +82,9 @@ Vladimir Petit-Homme
 Joshua D'Agostino
 
 # License 
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
 
 MIT License
 
