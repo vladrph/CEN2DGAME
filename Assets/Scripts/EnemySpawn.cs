@@ -1,60 +1,43 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
-    [SerializeField] 
-    private GameObject[] enemyReference;
+    [SerializeField] private GameObject[] enemyReference;
 
-    private GameObject spawnedMonster;
+    private GameObject _spawnedMonster;
 
-    [SerializeField] 
-    private Transform leftPos,rightPos;
-    //[SerializeField] 
-    //private Transform ;
+    [SerializeField] private Transform leftPos, rightPos;
 
-    private int randomIndex;
-    private int randomSide;
-    
-    
-    
+    private int _randomIndex;
+    private int _randomSide;
 
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(SpawnMonsters());
-
     }
-
-    // Update is called once per frame
-   
 
     IEnumerator SpawnMonsters()
     {
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(1, 5));
-            randomIndex = Random.Range(0, enemyReference.Length);
-            randomSide = Random.Range(0, 2);
+            _randomIndex = Random.Range(0, enemyReference.Length);
+            _randomSide = Random.Range(0, 2);
 
-            spawnedMonster = Instantiate(enemyReference[randomIndex]);
+            _spawnedMonster = Instantiate(enemyReference[_randomIndex]);
 
-            if (randomSide == 0)
+            if (_randomSide == 0)
             {
-                // left side
-                spawnedMonster.transform.position = leftPos.position;
-                spawnedMonster.GetComponent<EnemyMovement>().speed = Random.Range(4, 10);
-                // spawnedMonster.G
-
+                _spawnedMonster.transform.position = leftPos.position;
+                _spawnedMonster.GetComponent<EnemyMovement>().speed = Random.Range(4, 10);
             }
             else
             {
-                spawnedMonster.transform.position = rightPos.position;
-                spawnedMonster.GetComponent<EnemyMovement>().speed = -Random.Range(4, 10);
-                spawnedMonster.transform.localScale = new Vector3(-2f, 2f, 2f);
+                _spawnedMonster.transform.position = rightPos.position;
+                _spawnedMonster.GetComponent<EnemyMovement>().speed = -Random.Range(4, 10);
+                _spawnedMonster.transform.localScale = new Vector3(-2f, 2f, 2f);
             }
-
         }
     }
 }
