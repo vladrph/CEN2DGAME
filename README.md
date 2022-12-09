@@ -47,7 +47,19 @@ The motivation of this game is to build working software while utilizing SDLC/Ag
 # Retrospective 
 
 During this most recent sprint there were a few different things that we enjoyed about this process. The first of which, is the Unity Game Engine which helps speeds up the process of the game development.  Secondly, the number of online resources there is regarding game development. Everything from online tutorials, web forums, and online video help speed the learning process.  Additionally, using Trello to move items from the backlog through the production line has made it easier to see where we are in the project and what needs to be completed.  One major dislike of this sprint is the learning curve. Simple errors and mistakes could take hours to fix due to the inexperience of the developer. If we could improve anything regarding this sprint it would be to find more resources that we could implement in our agile development.  The focus for the next sprint would be to utilize more resources, increase communication and reinforce more agile principles throughout the project.
-
+# Version
+Alpha Version 1.0
+*  Created level 1
+*  Rendered sprites with for first player and different Zombies
+*  Created background for level one
+Alpha Version 1.1
+* Created level 2
+* Created a Main Menu
+* Added Parallax Background 
+* Added floating ground effects
+Beta Version 1.0
+* Allow friends and family to test for feedback
+* Making imporvements based on feedback from friends and fmaily
 
 # Author 
 
