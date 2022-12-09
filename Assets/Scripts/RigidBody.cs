@@ -1,8 +1,6 @@
 //This is code based on the video 2D Zombie AI in Unity - State Machine Behaviors
 //Specific Purpose: Used to control Zombie's frontward and backward movement based on the scale of object.
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Zombie : MonoBehaviour

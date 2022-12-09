@@ -1,8 +1,6 @@
 //Specific Purpose: Define a component that can be utilized to play an audio clip for the 2D Player sprite and Zombie sprites
 //This was identified based on a tutorial for Audio and Sound Manager Singleton Script - Daggerhart Lab
 
-using System.Collections.Generic;
-using System.Collections;
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour 
@@ -41,4 +39,4 @@ public void PlayMusic(AudioClip clip)
     MusicSource.Play();
     }
 
-} //end MonoBehavior
+} 

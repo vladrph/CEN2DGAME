@@ -1,119 +1,97 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-//public CharacterController2D controller;
-
-    float horizontalMove = 2f; //default player movement
-    private float verticalMove = 2f; // vertical player movement
-    public float runSpeed = 5f; //default player running speed
+    float _horizontalMove = 2f;
+    private float _verticalMove = 2f;
+    public float runSpeed = 5f;
     [SerializeField] private float moveForce = 10f;
     [SerializeField] private float jumpForce = 31;
     [SerializeField] int jumpPower;
 
-    private float movementX;
-    private float movementY;
-    private float rotationZ;
+    private float _movementX;
+    private float _movementY;
+    private float _rotationZ;
 
     public Rigidbody2D mybody;
 
-    private SpriteRenderer sr;
-    private Transform trans;
+    private SpriteRenderer _sr;
+    private Transform _trans;
 
-    private Animator anim;
-    private bool IsGrounded;
-    private string WALK_ANIMATION = "walk";
-    private string IDLE_ANIMATION = "Idle";
-    private string JUMP_ANIMATION = "jump";
-
-    private bool isGrounded = true;
-    private bool isJumping;
-
-
-    private string GROUND_TAG = "Ground";
-    private string ENEMY_TAG = "Zombie";
+    private Animator _anim;
+    private bool _isGrounded;
+    private string _walkAnimation = "walk";
+    private string _jumpAnimation = "jump";
+    
+    private string _groundTag = "Ground";
+    private string _enemyTag = "Zombie";
 
     private void Awake()
     {
-        mybody = GetComponent<Rigidbody2D>(); // attaching the object to the attributes 
-        anim = GetComponent<Animator>();
-        sr = GetComponent<SpriteRenderer>();
-        trans = GetComponent<Transform>();
+        mybody = GetComponent<Rigidbody2D>();
+        _anim = GetComponent<Animator>();
+        _sr = GetComponent<SpriteRenderer>();
+        _trans = GetComponent<Transform>();
     }
 
 
-//Update occurs once per frame
-
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal"); // used to go left or right 
-        verticalMove = Input.GetAxisRaw("Vertical");
+        _horizontalMove = Input.GetAxisRaw("Horizontal");
+        _verticalMove = Input.GetAxisRaw("Vertical");
 
         Vector2 pos = transform.position;
-        pos.x += horizontalMove * runSpeed * Time.deltaTime;
-        pos.y += verticalMove * runSpeed * Time.deltaTime; // time between every frame 
+        pos.x += _horizontalMove * runSpeed * Time.deltaTime;
+        pos.y += _verticalMove * runSpeed * Time.deltaTime; // time between every frame 
         transform.position = pos;
 
 
         PlayerMoveKeyboard();
-        //AnimatePlayer();
-       // PlayerJump();
     }
 
     void PlayerMoveKeyboard()
     {
-        movementX = Input.GetAxisRaw("Horizontal");
-        movementY = Input.GetAxisRaw("Vertical");
+        _movementX = Input.GetAxisRaw("Horizontal");
+        _movementY = Input.GetAxisRaw("Vertical");
 
-        Debug.Log("move x value is: " + movementX);
-        Debug.Log("Movement y value is: " + movementY);
-       // transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * moveForce;
-        transform.position += new Vector3(movementX, movementY, 0f) * Time.deltaTime * moveForce;
+        Debug.Log("move x value is: " + _movementX);
+        Debug.Log("Movement y value is: " + _movementY);
+        transform.position += new Vector3(_movementX, _movementY, 0f) * Time.deltaTime * moveForce;
     }
 
     void AnimatePlayer()
     {
-        if (movementX > 0)
+        if (_movementX > 0)
         {
-            // right side movement 
-
-
-            anim.SetBool(WALK_ANIMATION, true);
-            sr.flipX = false; // This allows us to flip the direction that the user is facing 
+            _anim.SetBool(_walkAnimation, true);
+            _sr.flipX = false;
         }
-        else if (movementX < 0)
+        else if (_movementX < 0)
         {
-            //left side movement 
-
-
-            anim.SetBool(WALK_ANIMATION, true);
-            sr.flipX = true; // This allows us to flip the direction that the user is facing 
+            _anim.SetBool(_walkAnimation, true);
+            _sr.flipX = true;
         }
 
-        else if( movementY > 0)
+        else if (_movementY > 0)
         {
-         anim.SetBool(JUMP_ANIMATION,true);   
+            _anim.SetBool(_jumpAnimation, true);
         }
         else
 
         {
-           anim.SetBool(WALK_ANIMATION, false);
-            sr.flipX = false;
-                // anim.SetBool(IDLE_ANIMATION, true);
+            _anim.SetBool(_walkAnimation, false);
+            _sr.flipX = false;
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag(GROUND_TAG))
+        if (collision.gameObject.CompareTag(_groundTag))
         {
-            IsGrounded = true;
+            _isGrounded = true;
         }
 
-        if (collision.gameObject.CompareTag(ENEMY_TAG))
+        if (collision.gameObject.CompareTag(_enemyTag))
         {
             Destroy(gameObject);
         }
@@ -123,13 +101,13 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetButtonUp("Jump"))
         {
-            mybody.AddForce (new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            mybody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
 
-            anim.SetBool(JUMP_ANIMATION, true);
+            _anim.SetBool(_jumpAnimation, true);
         }
         else
         {
-            anim.SetBool(JUMP_ANIMATION, false);
+            _anim.SetBool(_jumpAnimation, false);
         }
     }
 
@@ -137,7 +115,5 @@ public class Movement : MonoBehaviour
     {
         AnimatePlayer();
         PlayerJump();
-
-        
     }
 }
