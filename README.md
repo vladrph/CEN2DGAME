@@ -1,4 +1,4 @@
-# 2D Cen Project 
+# ZOMBIE RUN
 
 
 This is a 2D  game project built for a school assignment. The game follows a young boy who tries to run a away and fight different Zombies through a forest. This program is being developed with the following frameworks/technologies:
@@ -10,7 +10,23 @@ This is a 2D  game project built for a school assignment. The game follows a you
 ![Zombie run](https://user-images.githubusercontent.com/54378636/206655546-12636966-b131-4ff7-a469-d4f527601d4e.jpg)
 
 
+
+https://user-images.githubusercontent.com/54378636/206656805-85be4f85-e1a0-467e-be29-afff5cae4375.mp4
+
+
+
+
 ![6y0j7o](https://user-images.githubusercontent.com/54378636/197422434-16819b74-8941-4c47-bc27-51a0f9415465.gif)
+
+
+
+
+https://user-images.githubusercontent.com/54378636/206656126-971731aa-1e53-4b3e-8688-deafe67f8633.mp4
+
+
+
+
+
 
 # Motivation 
 
