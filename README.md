@@ -19,14 +19,6 @@ https://user-images.githubusercontent.com/54378636/206656805-85be4f85-e1a0-467e-
 
 ![6y0j7o](https://user-images.githubusercontent.com/54378636/197422434-16819b74-8941-4c47-bc27-51a0f9415465.gif)
 
-# DEMO
-
-
-https://user-images.githubusercontent.com/54378636/206656126-971731aa-1e53-4b3e-8688-deafe67f8633.mp4
-
-
-
-
 
 
 # Motivation 
@@ -47,6 +39,8 @@ The motivation of this game is to build working software while utilizing SDLC/Ag
 ![Player 1](https://user-images.githubusercontent.com/54378636/206670141-b73c772e-91c0-45d1-8f03-c56469cea927.jpg)
 
 *   Navigate through all the levels by avoiding the Zombies to win. 
+
+      https://user-images.githubusercontent.com/54378636/206656126-971731aa-1e53-4b3e-8688-deafe67f8633.mp4
 
 # Retrospective 
 
