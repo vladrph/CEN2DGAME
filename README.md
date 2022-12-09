@@ -7,6 +7,9 @@ This is a 2D  game project built for a school assignment. The game follows a you
 * C#
 * Unity Game Engine 
 
+![Zombie run](https://user-images.githubusercontent.com/54378636/206655546-12636966-b131-4ff7-a469-d4f527601d4e.jpg)
+
+
 ![6y0j7o](https://user-images.githubusercontent.com/54378636/197422434-16819b74-8941-4c47-bc27-51a0f9415465.gif)
 
 # Motivation 
