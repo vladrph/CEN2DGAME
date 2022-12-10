@@ -80,7 +80,11 @@ Beta Version 1.0
 
 Vladimir Petit-Homme
 Joshua D'Agostino
+# Credits
 
+Learn Unity - Beginner's Game Development Tutorial
+
+https://www.youtube.com/watch?v=gB1F9G0JXOo&t=14104s
 # License 
 
 [MIT](https://choosealicense.com/licenses/mit/)
