@@ -6,9 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Finish : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     private AudioSource finishSound;
+
     void Start()
     {
         finishSound = GetComponent<AudioSource>();
@@ -20,15 +19,13 @@ public class Finish : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             finishSound.Play();
-            Invoke("CompleteLevel",2f);
-            //CompleteLevel();
+            Invoke("CompleteLevel", 2f);
         }
-
     }
 
-    // Update is called once per frame
-     private void CompleteLevel()
-     {
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-     }
+
+    private void CompleteLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }

@@ -19,11 +19,8 @@ public class Zombie : MonoBehaviour
         {
             transform.localScale = new Vector2(0.45f, 0.45f);
         }
-        else
-        {
-          //  transform.localScale = new Vector2(-0.45, -0.45f);
-        }
+        
     }
 }
 
-//Script under the Enemy folder (C#)
+

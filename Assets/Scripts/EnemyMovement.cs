@@ -8,7 +8,6 @@ public class EnemyMovement : MonoBehaviour
     public float speed;
 
     private Rigidbody2D myBody;
-    // Start is called before the first frame update
     void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
@@ -16,7 +15,7 @@ public class EnemyMovement : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
         myBody.velocity = new Vector2(speed, myBody.velocity.y);
