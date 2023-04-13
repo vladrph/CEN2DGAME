@@ -20,6 +20,7 @@ public class Finish : MonoBehaviour
         {
             finishSound.Play();
             Invoke("CompleteLevel", 2f);
+            Debug.Log("Level Finished!");
         }
     }
 
