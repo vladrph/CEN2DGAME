@@ -25,6 +25,7 @@ public class AudioManager : MonoBehaviour
             case "Landing":
                 SoundObjectCreation(sfx_Landing);
                 break;
+                Debug.Log("Player landed - play landing sound");
         }    
     }
 
@@ -35,6 +36,7 @@ public class AudioManager : MonoBehaviour
             case "Creepy":
                 MusicObjectCreation(music_creepy);
                 break;
+                Debug.Log("Playing creepy music");
 
         }
     }
