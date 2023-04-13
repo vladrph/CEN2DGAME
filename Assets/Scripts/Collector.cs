@@ -10,6 +10,7 @@ public class Collector : MonoBehaviour
         if (collision.CompareTag("Zombie"))
         {
             Destroy(collision.gameObject);
+            Debug.Log("Player is dead");
         }
     }
 }
