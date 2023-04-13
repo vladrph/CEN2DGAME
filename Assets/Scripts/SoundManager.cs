@@ -31,12 +31,14 @@ public void Play(AudioClip clip)
 {
     EffectsSource.clip = clip;
     EffectsSource.Play();
+    Debugging.Log("Audio clip playing");
 }
 
 public void PlayMusic(AudioClip clip)
 {
     MusicSource.clip = clip;
     MusicSource.Play();
+    Debugging.Log("Music clip playing");
     }
 
 } 
