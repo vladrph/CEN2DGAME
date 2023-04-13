@@ -13,6 +13,7 @@ using UnityEngine;
      void Start()
      {
          player = GameObject.FindWithTag("Player").transform;
+         Debug.Log("Camera found player");
      }
      
      void LateUpdate()
@@ -24,5 +25,6 @@ using UnityEngine;
          tempPos.x = player.position.x;  
 
          transform.position = tempPos; 
+         Debug.Log("Camera is following the player");
      }
  }
