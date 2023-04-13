@@ -40,15 +40,18 @@ public class PlayerMovement: MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
             Jump();
+            Debug.Log("Player Jumped")
 
         if (Input.GetButtonDown("Crouch"))
         {
             crouchPressed = true;
+            Debug.Log("Player Crouched);
         }
 
         else if (Input.GetButtonUp("Crouch"))
         {
             crouchPressed = false;
+            Debug.Log("Player is standing");
         }
     }
 
@@ -68,6 +71,7 @@ public class PlayerMovement: MonoBehaviour
 
             rb.AddForce(new Vector2(0f, jumpPower));
             rb.velocity = Vector2.up * jumpPower;
+            Debug.Log("Player is jumping");
         }
 
         else
@@ -78,6 +82,7 @@ public class PlayerMovement: MonoBehaviour
 
                 rb.AddForce(new Vector2(0f, jumpPower));
                 rb.velocity = Vector2.up * jumpPower;
+                Debug.Log("Player is jumping again");
             }
         }
     }
@@ -96,6 +101,7 @@ public class PlayerMovement: MonoBehaviour
             if (!wasGrounded)
                 availableJumps = totalJumps;
                 multipleJump = false;
+                Debug.Log("Player is on ground");
         }
     }
 
@@ -107,6 +113,7 @@ public class PlayerMovement: MonoBehaviour
                 crouchFlag = true;
         }
         standingCollider.enabled = !crouchFlag;
+        Debug.Log("Player now crouching");
 
 
       if (isGrounded)
@@ -128,12 +135,14 @@ public class PlayerMovement: MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
             facingRight = false;
+            Debug.Log("Player looking left");
         }
 
         else if (!facingRight && dir > 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
             facingRight = true;
+            Debug.Log("Player looking right");
         }
     }
   }
