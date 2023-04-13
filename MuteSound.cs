@@ -16,6 +16,7 @@ public class MuteSound : MonoBehaviour
         if (!source.isPlaying)
         { 
             Destroy(gameObject);
+            Debug.Log("Sound is muted");
         }
     }
 }
