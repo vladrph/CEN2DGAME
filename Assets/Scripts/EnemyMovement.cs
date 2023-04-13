@@ -19,5 +19,6 @@ public class EnemyMovement : MonoBehaviour
     void FixedUpdate()
     {
         myBody.velocity = new Vector2(speed, myBody.velocity.y);
+        Debug.Log("Enemy is moving");
     }
 }
