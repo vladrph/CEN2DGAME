@@ -18,6 +18,7 @@ public class EnemySpawner : MonoBehaviour
         if (timer >= interval) {
             timer = 0f;
             Instantiate(Zombie2D, transform.position, transform.rotation);
+            Debug.Log("The zombie is moving");
         }
     }
 }
