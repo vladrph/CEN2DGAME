@@ -19,5 +19,6 @@ public class CameraFollow : MonoBehaviour
         _tempPos = transform.position;
         _tempPos.x = _player.position.x;
         transform.position = _tempPos;
+        Debug.Log("Camera is moving with the player");
     }
 }
