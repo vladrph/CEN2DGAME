@@ -17,7 +17,8 @@ public class TriggerSFX : MonoBehaviour
     {
         if (collision.gameObject.tag == "Skeleton")
         {
-            playSound.Play();            
+            playSound.Play(); 
+            Debugging.Log("Player collided with skeleton");
         }
 
     }
